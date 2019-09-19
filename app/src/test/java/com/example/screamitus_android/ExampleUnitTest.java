@@ -18,12 +18,13 @@ public class ExampleUnitTest {
     int totalInfected;
     int noOfInfectedPerday;
 
+int day;
+
     @Test
-    public int testCase1( int day ){
+    public int testCase1(  ){
 
 
-        if(4 > 0){        //4>0
-
+        if   ( 4 > 0){        //4>0
 
             totalInfected = 4 * 5;
             assertEquals(20,totalInfected);
@@ -40,7 +41,33 @@ return totalInfected;
 
         }
 
+
+@Test
+public void testCase2(){
+
+       if (day== 1){
+totalInfected = 1 * 5;
+        assertEquals(5,totalInfected);
+
+            } else if (day== 2){
+        totalInfected = 2 * 5;
+        assertEquals(10,totalInfected);
+
+    } else if (day== 3){
+        totalInfected = 3 * 5;
+        assertEquals(15,totalInfected);
+
+    }
+        }
+
+    @Test
+    public void testCase3(){
+
+
+
     }
 
 
-}
+
+    }
+
