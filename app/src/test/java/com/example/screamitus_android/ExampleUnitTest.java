@@ -20,26 +20,26 @@ public class ExampleUnitTest {
 
 int day;
 
-//    @Test
-//    public int testCase1(  ){
-//
-//
-//        if   ( 4 > 0){        //4>0
-//
-//            totalInfected = 4 * 5;
-//            assertEquals(20,totalInfected);
-//
-//            return 1;
-//        }else if (4 <= 0) {
-//
-//            return -1;
-//
-//        }
-//
-//
-//return totalInfected;
-//
-//        }
+    @Test
+    public int testCase1(  ){
+
+
+        if   ( 4 > 0){        //4>0
+
+            totalInfected = 4 * 5;
+            assertEquals(20,totalInfected);
+
+            return 1;
+        }else if (4 <= 0) {
+
+            return -1;
+
+        }
+
+
+return totalInfected;
+
+        }
 
 
 @Test
@@ -143,9 +143,22 @@ totalInfected = 1 * 5;
 
 
     }
+
+@Test
+public void testcase4() {
+    String pritesh;
+    String kiani;
+    String Albert;
+
+    if (day % 2 == 0) {
+        totalInfected = 0;
+        assertEquals(0, totalInfected);
+
+    } else {
+        return totalInfected;
     }
 
+}
 
-
-
+}
 
