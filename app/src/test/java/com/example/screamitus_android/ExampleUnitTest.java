@@ -14,4 +14,33 @@ public class ExampleUnitTest {
 //    public void addition_isCorrect() {
 //        assertEquals(4, 2 + 2);
 //    }
+ int totaldays;
+    int totalInfected;
+    int noOfInfectedPerday;
+
+    @Test
+    public int testCase1( int day ){
+
+
+        if(4 > 0){        //4>0
+
+
+            totalInfected = 4 * 5;
+            assertEquals(20,totalInfected);
+
+            return 1;
+        }else if (4 <= 0) {
+
+            return -1;
+
+        }
+
+
+return totalInfected;
+
+        }
+
+    }
+
+
 }

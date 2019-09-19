@@ -3,13 +3,14 @@ package com.example.screamitus_android;
 public class Infection {
 
     //test
-    int days;
+    int day;
     int totalInfected;
-    int noOfInfected;
+    int noOfInfectedPerday;
 
     public int calculateTotalInfected(int day){
 
-        totalInfected = days * noOfInfected;
+
+        totalInfected = day * noOfInfectedPerday;
 
 
         return totalInfected;
