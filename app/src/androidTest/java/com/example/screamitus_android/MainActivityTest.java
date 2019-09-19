@@ -20,7 +20,20 @@ public class MainActivityTest {
     @After
     public void tearDown() throws Exception {
     }
+    public void testforTestBox(){
 
+        @Rule
+        ActivityTestRule<MainActivityTest> mActivityRule =
+                new ActivityTestRule<>(MainActivityTest.class);
+
+        @Test
+        public void ensureButtonDisableAfterOneClick() {
+            onView(withId(R.id.username)).perform(ViewActions.clearText())
+                    .perform(ViewActions.typeText(“My Name”),closeSoftKeyboard());
+            onView(withId(R.id.login_button)).perform(click());
+            onView(withId(R.id.login_button)).check(matches(not(isEnabled())));
+        }
+    }
 
 }
 
